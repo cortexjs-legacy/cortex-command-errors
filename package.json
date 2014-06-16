@@ -1,7 +1,7 @@
 {
   "name": "cortex-command-errors",
-  "version": "0.1.0",
-  "description": "cortex-command-errors",
+  "version": "0.1.1",
+  "description": "Gracefully handle error hints for cortex commands.",
   "main": "index.js",
   "scripts": {
     "test": "make test"
@@ -11,9 +11,11 @@
     "url": "git://github.com/cortexjs/cortex-command-errors.git"
   },
   "keywords": [
-    "cortex-command-errors"
+    "cortex",
+    "errors",
+    "handler"
   ],
-  "engines": { 
+  "engines": {
     "node": ">=0.11.0"
   },
   "author": "kael",

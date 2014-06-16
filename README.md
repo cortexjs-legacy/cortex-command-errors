@@ -11,10 +11,12 @@ $ npm install cortex-command-errors --save
 ## Usage
 
 ```js
-var cortex_command_errors = require('cortex-command-errors');
+var handler = require('cortex-command-errors')(logger, profile);
+
+something.on('error', handler);
 ```
 
-## Licence
+## License
 
 MIT
 <!-- do not want to make nodeinit to complicated, you can edit this whenever you want. -->
