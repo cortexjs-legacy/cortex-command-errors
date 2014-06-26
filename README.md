@@ -1,6 +1,6 @@
 # cortex-command-errors [![NPM version](https://badge.fury.io/js/cortex-command-errors.svg)](http://badge.fury.io/js/cortex-command-errors) [![Build Status](https://travis-ci.org/cortexjs/cortex-command-errors.svg?branch=master)](https://travis-ci.org/cortexjs/cortex-command-errors) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-command-errors.svg)](https://gemnasium.com/cortexjs/cortex-command-errors)
 
-<!-- description -->
+Gracefully handle error hints for cortex commands.
 
 ## Install
 

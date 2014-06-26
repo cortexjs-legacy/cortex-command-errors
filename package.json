@@ -1,6 +1,6 @@
 {
   "name": "cortex-command-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gracefully handle error hints for cortex commands.",
   "main": "index.js",
   "scripts": {
