@@ -1,17 +1,31 @@
 'use strict';
 
-module.exports = function (logger) {
+module.exports = handler;
+
+
+function handler (options) {
+  var logger = options.logger;
+  var harmony = options.harmony;
+
   return function (err) {
+    var message;
+    var code;
+
     if (err instanceof Error) {
       // loggie will deal with `Error` instances
-      logger.fatal(err);
+      message = err;
+      code = 1;
 
       // error code
     } else if (typeof err === 'number') {
-      logger.fatal(err, 'Not ok, exit code: ' + err);
+      message = 'Not ok, exit code: ' + err;
+      code = err;
 
     } else {
-      logger.fatal(err.exitcode, err.message || err);
+      message = err.message || err;
+      code = err.exitcode || 1;
     }
+
+    logger.fatal(message, harmony ? false : code);
   };
 };

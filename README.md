@@ -11,10 +11,16 @@ $ npm install cortex-command-errors --save
 ## Usage
 
 ```js
-var handler = require('cortex-command-errors')(logger, profile);
+var handler = require('cortex-command-errors')(options);
 
 something.on('error', handler);
 ```
+
+## options
+
+- logger: {Object}
+- profile: {Object}
+- harmony: {Boolean} if true, fatal errors will only write to error logs rather than kill the process.
 
 ## License
 
