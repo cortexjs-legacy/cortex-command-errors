@@ -1,6 +1,6 @@
 {
   "name": "cortex-command-errors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gracefully handle error hints for cortex commands.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "handler"
   ],
   "engines": {
-    "node": ">=0.11.0"
+    "node": ">=0.10.0"
   },
   "author": "kael",
   "license": "MIT",
