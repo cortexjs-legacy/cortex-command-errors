@@ -21,6 +21,7 @@ something.on('error', handler);
 - logger: {Object}
 - profile: {Object}
 - harmony: {Boolean} if true, fatal errors will only write to error logs rather than kill the process.
+- notify: {Boolean} if true, the errors will be displayed in the notification bar.
 
 ## License
 
